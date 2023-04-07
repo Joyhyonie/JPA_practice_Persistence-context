@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+	
+	<persistence-unit name="jpatest"> <!-- 환경 이름 설정 -->
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver"/>
+			<property name="javax.persistence.jdbc.user" value="C##GREEDY"/>
+			<property name="javax.persistence.jdbc.password" value="GREEDY"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+		
+			<!-- JPA가 만들어서 보내는 sql 구문을 개발자에게 보여주고 보기 쉽게 format 설정 -->
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.format_sql" value="true"/>
+		</properties>
+	
+	</persistence-unit>
+
+</persistence>
